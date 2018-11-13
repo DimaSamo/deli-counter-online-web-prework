@@ -26,6 +26,8 @@ def now_serving(q)
     end
 end
 
+now_serving(katz_deli)
 take_a_number(katz_deli, "Dmitri")
 
 take_a_number(katz_deli, "Bob")
+now_serving(katz_deli)
