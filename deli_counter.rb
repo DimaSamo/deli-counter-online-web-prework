@@ -13,9 +13,10 @@ def line(q)
   end
 end
 
-def take_a_number(q, name)
-  q.push(name)
-  puts "Welcome, #{name}. You are number #{q.size} in line."
+def take_a_number(q)
+  #q is now an array of ticket numbers, not names
+  q.push(q.size)
+  puts "Welcome, you are ticket number #{q.last}. You are number #{q.size} in line."
 end
 
 def now_serving(q)
@@ -26,8 +27,6 @@ def now_serving(q)
     end
 end
 
-now_serving(katz_deli)
-take_a_number(katz_deli, "Dmitri")
+take_a_number(katz_deli)
+take_a_number(katz_deli)
 
-take_a_number(katz_deli, "Bob")
-now_serving(katz_deli)
