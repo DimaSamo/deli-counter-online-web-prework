@@ -15,7 +15,7 @@ end
 
 def take_a_number(q)
   #q is now an array of ticket numbers, not names
-  q.push(q.size)
+  q.push(q.size+1)
   puts "Welcome, you are ticket number #{q.last}. You are number #{q.size} in line."
 end
 
