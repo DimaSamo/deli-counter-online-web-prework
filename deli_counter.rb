@@ -1,5 +1,6 @@
 # Write your code here.
 katz_deli = []
+$ticket = 1
 
 def line(q)
   retstring = "The line is currently:"
@@ -15,8 +16,9 @@ end
 
 def take_a_number(q)
   #q is now an array of ticket numbers, not names
-  q.push(q.size+1)
-  puts "Welcome, you are ticket number #{q.last}. You are number #{q.size} in line."
+  q.push($ticket)
+  puts "Welcome, you are ticket number #{$ticket}. You are number #{q.size} in line."
+  $ticket += 1
 end
 
 def now_serving(q)
