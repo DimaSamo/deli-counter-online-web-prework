@@ -25,3 +25,5 @@ def now_serving(q)
       puts "Currently serving #{q.shift}."
     end
 end
+
+take_a_number(katz_deli, "Dmitri")
